@@ -1,0 +1,247 @@
+.video1 {
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+  }
+  .card1{
+    padding-top: 100px !important;
+  }
+  .nameContent{
+    margin-top: 30px !important;
+  }
+  .card3 {
+    background-color: white;
+    color: black;
+    width: 100%;
+  
+  
+  }
+  
+  .cardbttn {
+    color: red;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  .subcard3 {
+    margin-bottom: 0%;
+  }
+  
+  .card31 {
+    margin-bottom: 0%;
+    height: 100%;
+  
+  }
+  
+  
+  
+  
+  .subcard22 {
+    text-align: left;
+    word-spacing: 0px;
+  
+    font-weight: 1950;
+  }
+  
+  .semicard2 {
+    color: rgb(168, 77, 23);
+  
+  }
+  
+  .subcard3 {
+    text-align: left;
+  }
+  
+  /* .subcard31{
+        height: 400px;
+        width: 500px;
+    } */
+  .subcard3 {
+    margin-left: 130px;
+    text-decoration: none;
+  }
+  
+  .subcard31 {
+    margin-left: 100px;
+  
+  
+  }
+  
+  .subcard2 {
+    text-align: center;
+  }
+  
+  @media (max-width: 576px) {
+    .card1 {
+      padding: 20px;
+    }
+  
+    .semicard1 {
+      word-spacing: -1px;
+    }
+  
+    .subcard1 {
+      display: block;
+    }
+  
+    .card31 {
+      display: block;
+    }
+  
+    .subcard2 {
+      text-align: center;
+    }
+  
+    .card3 {
+      margin-top: -80px;
+    }
+  
+  }
+  
+  @media (max-width: 320px) {
+    .subcard1 {
+      display: block;
+    }
+  
+    .semicard2 {
+      text-align: center;
+    }
+  
+    .card31 {
+      display: block;
+    }
+  
+    .subcard31 {
+      margin: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .subcard31 {
+      width: 100%;
+    }
+  
+    .semicard31 {
+      width: 100%;
+      /* height: 400px; */
+    }
+  
+    .subcard3 {
+      margin: auto;
+    }
+  
+    .subcard31 {
+      margin: auto;
+      top: -10px;
+    }
+  
+    .card31 {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .subcard3 {
+      width: 80%;
+      margin: auto;
+  
+    }
+  
+    .card3 {
+      margin-top: -80px;
+    }
+  
+    .semicard31 {
+      width: 80%;
+      height: 400px;
+      margin: auto;
+    }
+  
+    .subcard31 {
+      width: 80%;
+    }
+  
+    .subcard2 {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+  
+    .subcard2 {
+      text-align: center;
+    }
+  
+  }
+  
+  /* Styles for larger screens (572px and above) */
+  
+  @media only screen and (min-width: 575px) and (max-width: 760px) {}
+  
+  .subcard2 {
+    text-align: center;
+    /* color: orange !important; */
+  }
+  
+  .imgsize {
+    /* height: 300px; */
+    height: 275px;
+    width: 275px;
+    /* width: 300px; */
+    /* border: 2px solid transparent; */
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.9);
+    margin-bottom: 10px;
+  }
+  
+  .myelementSec {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0.4;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Define the keyframes for the animation */
+  @keyframes hoverAnimation {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    100% {
+      transform: translateY(-10px); /* Move up by 10px and stay there */
+    }
+  }
+  .col.subcard11 {
+    transition: transform 0.3s ease; 
+  }
+  
+  /* Apply the animation to the element on hover */
+  .col.subcard11:hover,.col.subcard12:hover,.col.subcard13:hover {
+    animation: hoverAnimation 0.3s ease forwards; /* Animation forwards to the end state */
+  }
+  
+  /* Style for the h5 element */
+  .col.subcard11,.col.subcard12,.col.subcard13 h5 {
+    margin-top: 10px; /* Add some space between the image and the text */
+  }
+  .firstTextColor{
+    background-image: linear-gradient(to bottom, orange, red) !important;
+
+    -webkit-background-clip: text;
+    /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent !important;
+    /* text-fill-color: transparent; */
+
+  }

@@ -1,0 +1,29 @@
+.link-with-underline {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transition: width 0.3s ease-in-out;
+  }
+  
+
+  &:hover::before {
+    width: 100%;
+  }
+  @media (max-width: 430px) {
+    &:hover::before {
+      width: 18%;
+    }
+  }
+}
+.signupBtn{
+  margin-left: 8px;
+}

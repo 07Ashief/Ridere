@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Common styles for all views */
+.countSection {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    height: 40vh;
+    gap: 10px;
+    /* Gap between rows and columns */
+}
+
+.countSectionH1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    background-color: #fff;
+    /* Background color for h1 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+    color: #000000;
+    font-size: 42px;
+    letter-spacing: 0em;
+    line-height: 1.2;
+}
+
+/* Style for the "60" text */
+.countSectionH1 span.number {
+    color: #000000;
+    /* Black color for "60" */
+}
+
+/* Style for the "+" symbol */
+.countSectionH1 span.plus {
+    color: #FF3000;
+    /* #FF3000 color for "+" */
+}
+
+/* Style for the "Cities" text */
+.countSectionH1 span.cities {
+    display: block;
+    /* Display "Cities" on a new line */
+    font-size: 16px;
+}
+
+/* Laptop view */
+@media (min-width: 992px) {
+    .countSection {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .countSection {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .countSection {
+        grid-template-rows: repeat(5, min-content); /* Set rows to minimum content height */
+        grid-template-columns: 1fr;
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .countSectionH1 {
+        font-size: 36px; /* Adjust font size for better visibility */
+        padding: 40px 0;
+    }
+
+    .faqSection {
+        position: relative;
+        z-index: 1; /* Ensure FAQ section is on top */
+    }
+}

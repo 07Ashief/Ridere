@@ -1,0 +1,79 @@
+/* BackgroundSection.css */
+
+.background-section {
+    height: 75vh;
+    background-image: url("./images/78786.jpg");
+    background-size: cover;
+    background-position: center 30%; /* Set background position to center horizontally and bottom vertically */
+    color: white;
+    padding: 100px 0;
+    /* position: relative; */
+}
+
+/* .background-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+} */
+
+.background-section p {
+    font-size: 1.2rem;
+}
+.hcolor{
+    font-size: 90px;
+    color: rgb(255,93,38);
+
+}
+.tcolor{
+    color:rgb(253,178,49);
+}
+.pcolor{
+    color:black;
+}
+.background-image {
+    position: absolute;
+    bottom: 80px;
+    right: 0px; 
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 1; /* Make sure it's above the background */
+    /* animation: slide 5s ease;  */
+}
+
+/* @keyframes slide {
+  from {
+    transform: translateX(100%); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+  
+
+@media (max-width: 450px) {
+    .background-image {
+        right: 0; 
+        transform: translateX(0);
+        width: 400px;
+        top: 200px;
+        animation: slideMobile 5s ease; 
+    }
+
+    @keyframes slideMobile {
+        from {
+            left: 100%; 
+        }
+        to {
+            left: 0; 
+        }
+    }
+
+    .background-section {
+        height: 60vh;
+        background-size: cover;
+        background-position: center 30%; 
+        color: white;
+        padding: 100px 0;
+    }
+}
+ */

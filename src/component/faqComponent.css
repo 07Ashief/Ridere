@@ -1,0 +1,183 @@
+.faq-container h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #333333;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+  .faq-section { /* Updated class name */
+    margin: 0;
+    padding: 100px 0;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #4d5974;
+    display: flex;
+    min-height: 40vh;
+  }
+  
+  .faq-container { /* Updated class name */
+    margin: 0 auto;
+    padding: 4rem;
+    width: 58rem;
+    
+  }
+  
+  .faq-accordion { /* Updated class name */
+    border: 1px solid #e3eee3;
+    border-radius: 17px;
+    background-color: #e3eee3;
+  }
+  
+  .faq-accordion .faq-accordion-item { /* Updated class name */
+    border-bottom: 1px solid #9a9e9a;
+  }
+  
+  /* Updated CSS to remove underline from last question */
+  .faq-accordion .faq-accordion-item:last-child { /* Updated class name */
+    border-bottom: none;
+  }
+  
+  .faq-accordion button { /* Updated class name */
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .faq-accordion button:hover,
+  .faq-accordion button:focus { /* Updated class name */
+    cursor: pointer;
+  }
+  
+  .faq-accordion button:hover::after,
+  .faq-accordion button:focus::after { /* Updated class name */
+    cursor: pointer;
+  }
+  
+  .faq-accordion button .faq-accordion-title { /* Updated class name */
+    margin-left: 50px;
+    padding: 1em 1.5em 1em 0;
+  }
+  
+  .faq-accordion button .faq-icon { /* Updated class name */
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+    color: #9a9e9a;
+  }
+  
+  .faq-accordion button .faq-icon::before { /* Updated class name */
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  
+  .faq-accordion button .faq-icon::after { /* Updated class name */
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  
+  .faq-accordion button[aria-expanded=true] .faq-icon::after { /* Updated class name */
+    width: 0;
+  }
+  
+  .faq-accordion button[aria-expanded=true]+.faq-accordion-content { /* Updated class name */
+    opacity: 1;
+    max-height: 9em;
+    transition: all 0.9s ease-in-out;
+    will-change: opacity, max-height;
+  }
+  
+  .faq-accordion button[aria-expanded=false]+.faq-accordion-content { /* Updated class name */
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    will-change: opacity, max-height;
+  }
+  
+  .faq-accordion .faq-accordion-content { /* Updated class name */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  
+  .faq-accordion .faq-accordion-content p { /* Updated class name */
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 1em 0;
+    padding-left: 50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .faq-container { /* Updated class name */
+      padding: 2rem;
+      width: 100%;
+    }
+  
+    .faq-accordion .faq-accordion-item { /* Updated class name */
+      border-bottom: 1px solid #9a9e9a;
+      width: 100%;
+    }
+  
+    .faq-accordion button .faq-accordion-title { /* Updated class name */
+      margin-left: 50px;
+    }
+  
+    .faq-accordion button .faq-icon { /* Updated class name */
+      top: 19px;
+      left: 10px;
+    }
+  
+    .faq-accordion button[aria-expanded=true] + .faq-accordion-content { /* Updated class name */
+      max-height: 100%;
+    }
+  
+    .faq-accordion .faq-accordion-content p { /* Updated class name */
+      padding-left: 50px;
+    }
+  }
+  
+  /* Responsive styles for mobile view */
+  @media screen and (max-width: 480px) {
+    .faq-section { /* Updated class name */
+      position: relative;
+    }
+    .faq-container { /* Updated class name */
+      padding: 1rem;
+    }
+  
+    .faq-accordion button .faq-icon { /* Updated class name */
+      top: 19px;
+      left: 5px;
+    }
+    .faq-accordion button .faq-accordion-title { /* Updated class name */
+      margin-left: 50px;
+    }
+    .faq-accordion .faq-accordion-content p { /* Updated class name */
+      padding-left: 50px;
+    }
+  }
+  
